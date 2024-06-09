@@ -28,7 +28,7 @@ docker-compose.yml целиком;
 скриншот графика, постоенного на основе вашей метрики.
 
 
-1. docker-compose целиком - ![docker-compose целиком](https://github.com/maxgn87/https-github.com-6-4-Docker.-2/blob/main/docker-compose.yml)
+1. ![docker-compose целиком](https://github.com/maxgn87/https-github.com-6-4-Docker.-2/blob/main/docker-compose.yml)
 2. скриншот команды docker ps после запуске docker-compose.yml - 
 
 
