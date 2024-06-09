@@ -33,7 +33,7 @@ docker-compose.yml целиком;
 
 
 
-3. ![ 
+3. ![cкриншот метрики](https://github.com/maxgn87/https-github.com-6-4-Docker.-2/blob/main/image/screen%20metrica.png) 
 
 
 
