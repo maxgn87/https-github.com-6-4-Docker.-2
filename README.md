@@ -33,7 +33,18 @@ docker-compose.yml целиком;
 
 
 
-3. ![cкриншот метрики](https://github.com/maxgn87/https-github.com-6-4-Docker.-2/blob/main/image/screen%20metrica.png) 
+3. ![cкриншот метрики](https://github.com/maxgn87/https-github.com-6-4-Docker.-2/blob/main/image/screen%20metrica.png)
+
+
+Задание 8
+Выполните действия:
+
+Остановите и удалите все контейнеры одной командой.
+В качестве решения приложите скриншот консоли с проделанными действиями.
+
+![остановка и удаление контейнеров](https://github.com/maxgn87/https-github.com-6-4-Docker.-2/blob/main/image/stop%20all%20delete%20all%20containers.png)
+
+
 
 
 
