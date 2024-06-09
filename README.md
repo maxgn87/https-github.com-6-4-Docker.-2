@@ -33,6 +33,10 @@ docker-compose.yml целиком;
 
 
 
+3. ![ 
+
+
+
 
 
 
