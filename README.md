@@ -29,7 +29,7 @@ docker-compose.yml целиком;
 
 
 1. ![docker-compose целиком](https://github.com/maxgn87/https-github.com-6-4-Docker.-2/blob/main/docker-compose.yml)
-2. скриншот команды docker ps после запуске docker-compose.yml - 
+2. ![скриншот команды docker ps после запуске docker-compose.yml]( https://github.com/maxgn87/https-github.com-6-4-Docker.-2/blob/main/image/docker%20ps.png)
 
 
 
