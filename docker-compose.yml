@@ -1,0 +1,61 @@
+version: '3.9'
+
+services:
+
+  prometheus:
+    image: prom/prometheus:latest
+    volumes:
+      - ./prometheus:/etc/prometheus/
+    container_name: gnedinmr-netology-prometheus
+    hostname: prometheus
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+    ports:
+      - 9090:9090
+    restart: unless-stopped
+    environment:
+      TZ: "Europe/Moscow"
+      network_mode: bridge
+    networks:
+     - gnedinmr-my-netology-hw
+  
+  pushgateway:
+    image: prom/pushgateway
+    container_name: gnedinmr-netology-pushgateway
+    restart: unless-stopped
+    depends_on:
+      - grafana
+    expose:
+      - 9091
+    ports:
+      - "9091:9091"
+    network_mode: bridge
+    networks:
+      - gnedinmr-my-netology-hw
+    labels:
+      org.label-schema.group: "monitoring"
+
+  grafana:
+    image: grafana/grafana
+    user: root
+    depends_on:
+      - prometheus
+    ports:  
+      - 80:3000
+    volumes:
+      - ./grafana:/var/lib/grafana
+      - ./grafana/custom.ini:/etc/grafana/grafana.ini
+    container_name: gnedinmr-netology-grafana
+    environment:
+      GF_PATHS_CONFIG: /etc/grafana/grafana.ini
+    hostname: grafana
+    restart: unless-stopped
+    networks:
+      - gnedinmr-my-netology-hw
+
+networks:
+  gnedinmr-my-netology-hw:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.5.0.0/16
